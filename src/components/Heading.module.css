@@ -1,7 +1,8 @@
 .heading {
-    background: rgb(21, 138, 132);
-    color: black;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 24px;
 }
-.cyan{
-    color: cyan;
-}
+
