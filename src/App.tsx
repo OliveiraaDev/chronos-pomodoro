@@ -1,38 +1,24 @@
 import './styles/tema.css';
 import './styles/global.css';
 
+import { Container } from './components/Container';
+import { Menu } from './components/menu';
+import { Logo } from './components/Logo';
+import { CountDown } from './components/Heading/CountDown';
+
 export function App() {
   return (
     <>
-      <div className="container">
-        <div className="content">
-          <section>
-            <p>
-              LOGO
-            </p>
-          </section>
-        </div>
-      </div>
-           <div className="container">
-        <div className="content">
-          <section>
-            <p>
-              MENU
-            </p>
-          </section>
-        </div>
-      </div>
+      <Container>
+        <Logo /> 
+      </Container>
 
-           <div className="container">
-        <div className="content">
-          <section>
-            <p>
-              FORMULÁRIO
-            </p>
-          </section>
-        </div>
-      </div>
-           
+        <Container>
+        <Menu /> 
+      </Container>
+       <Container>
+        <CountDown /> 
+      </Container>
     </>
   );
 }
